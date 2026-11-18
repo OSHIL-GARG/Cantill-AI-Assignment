@@ -1,0 +1,14 @@
+
+# Company B: Metal packaging manufacturer
+# Reporting currency: USD
+
+company: B
+reporting_currency: USD
+
+inputs:
+  invoices: data/raw/company_b/invoice_lines.csv
+  fx: data/raw/company_b/fx_rates_usd.csv
+  taxonomy: taxonomies/taxonomy_B.csv
+  labels: data/raw/company_b/seed_labels.csv
+
+output: submission/Oshil_Garg_B.csv

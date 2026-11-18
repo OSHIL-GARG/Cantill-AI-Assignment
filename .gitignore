@@ -1,0 +1,58 @@
+
+# ------------------------------
+# Confidential assignment data
+# ------------------------------
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ------------------------------
+# Python virtual environments
+# ------------------------------
+.venv/
+venv/
+env/
+
+# ------------------------------
+# Python cache and compiled files
+# ------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ------------------------------
+# Testing and coverage
+# ------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ------------------------------
+# Logs
+# ------------------------------
+logs/*
+!logs/.gitkeep
+*.log
+
+# ------------------------------
+# Environment variables and secrets
+# ------------------------------
+.env
+.env.*
+!.env.example
+
+# ------------------------------
+# IDE and operating system files
+# ------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# Model and temporary files
+# ------------------------------
+outputs/models/*
+*.tmp
+*.temp

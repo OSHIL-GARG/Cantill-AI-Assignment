@@ -1,0 +1,14 @@
+
+# Company A: Mining operations / Chemicals group
+# Reporting currency: ZAR
+
+company: A
+reporting_currency: ZAR
+
+inputs:
+  erp: data/raw/company_a/erp_goods_receipts.csv
+  tool: data/raw/company_a/invoice_tool_export.csv
+  taxonomy: taxonomies/taxonomy_A.csv
+  labels: data/raw/company_a/labels_A.csv
+
+output: submission/Oshil_Garg_A.csv

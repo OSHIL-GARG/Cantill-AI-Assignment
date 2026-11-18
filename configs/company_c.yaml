@@ -1,0 +1,33 @@
+
+# Company C: Blind-test company
+# Reporting currency: USD
+# No labelled training data is available.
+
+company: C
+reporting_currency: USD
+
+inputs:
+  invoices: data/raw/company_c/invoice_lines.csv
+  taxonomy: taxonomies/taxonomy_C.csv
+  # Optional: add an FX file here only if the blind-test kit provides one.
+  # fx: data/raw/company_c/fx_rates_usd.csv
+
+output: submission/Oshil_Garg_C.csv
+
+# Map the unseen company's source columns to the standard names
+# expected by src/engine.py -> run_c().
+
+columns:
+  record_id: line_id
+  amount: line_amount
+  currency: currency
+  currency_rate: currency_rate
+  date: invoice_date
+  description: line_description
+  supplier_id: vendor_id
+  supplier_name: supplier_name
+  item_id: material_number
+  status: status
+  gl_account_description: gl_account_description
+  invoice_number: invoice_number
+  invoice_line: invoice_line
